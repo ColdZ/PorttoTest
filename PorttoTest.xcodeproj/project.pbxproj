@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5F15C0E28EFD08CB17A8324E /* Pods_PorttoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD9D2641105221E8B5FEF5F /* Pods_PorttoTestTests.framework */; };
 		CDAC3E40588E52EC3882D46C /* Pods_PorttoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FC71CFC507B2A860300120 /* Pods_PorttoTest.framework */; };
+		FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41EF242F1E380010A52B /* APIRequest.swift */; };
+		FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F1242F1ED20010A52B /* APIManager.swift */; };
+		FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F3242F25240010A52B /* AssetsRequest.swift */; };
 		FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2436242F170E0095DEDB /* AppDelegate.swift */; };
-		FFBA2439242F170E0095DEDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2438242F170E0095DEDB /* ViewController.swift */; };
+		FFBA2439242F170E0095DEDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2438242F170E0095DEDB /* MainViewController.swift */; };
 		FFBA243C242F170E0095DEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243A242F170E0095DEDB /* Main.storyboard */; };
 		FFBA243E242F170F0095DEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243D242F170F0095DEDB /* Assets.xcassets */; };
 		FFBA2441242F170F0095DEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */; };
 		FFBA244C242F17100095DEDB /* PorttoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA244B242F17100095DEDB /* PorttoTestTests.swift */; };
+		FFD904E3242F41C300B51121 /* BalanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD904E2242F41C300B51121 /* BalanceRequest.swift */; };
+		FFD904EB242F507600B51121 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD904EA242F507600B51121 /* ResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,12 @@
 		BCA65923C004BA900D942983 /* Pods-PorttoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PorttoTestTests.debug.xcconfig"; path = "Target Support Files/Pods-PorttoTestTests/Pods-PorttoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0FC71CFC507B2A860300120 /* Pods_PorttoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PorttoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F935737E8DD199E3F3B58697 /* Pods-PorttoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PorttoTest.release.xcconfig"; path = "Target Support Files/Pods-PorttoTest/Pods-PorttoTest.release.xcconfig"; sourceTree = "<group>"; };
+		FF7B41EF242F1E380010A52B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		FF7B41F1242F1ED20010A52B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FF7B41F3242F25240010A52B /* AssetsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRequest.swift; sourceTree = "<group>"; };
 		FFBA2433242F170E0095DEDB /* PorttoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PorttoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBA2436242F170E0095DEDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFBA2438242F170E0095DEDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFBA2438242F170E0095DEDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FFBA243B242F170E0095DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBA243D242F170F0095DEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBA2440242F170F0095DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		FFBA2447242F17100095DEDB /* PorttoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PorttoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBA244B242F17100095DEDB /* PorttoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorttoTestTests.swift; sourceTree = "<group>"; };
 		FFBA244D242F17100095DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD904E2242F41C300B51121 /* BalanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRequest.swift; sourceTree = "<group>"; };
+		FFD904EA242F507600B51121 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +84,6 @@
 				BCA65923C004BA900D942983 /* Pods-PorttoTestTests.debug.xcconfig */,
 				1B8FA18E586F8DB3F39ED8A2 /* Pods-PorttoTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,8 +119,11 @@
 		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
 			isa = PBXGroup;
 			children = (
+				FFD904E9242F445300B51121 /* Manager */,
+				FFD904E8242F442F00B51121 /* APIRequest */,
+				FFD904E7242F441A00B51121 /* ViewController */,
+				FFD904E6242F440800B51121 /* Model */,
 				FFBA2436242F170E0095DEDB /* AppDelegate.swift */,
-				FFBA2438242F170E0095DEDB /* ViewController.swift */,
 				FFBA243A242F170E0095DEDB /* Main.storyboard */,
 				FFBA243D242F170F0095DEDB /* Assets.xcassets */,
 				FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */,
@@ -127,6 +139,40 @@
 				FFBA244D242F17100095DEDB /* Info.plist */,
 			);
 			path = PorttoTestTests;
+			sourceTree = "<group>";
+		};
+		FFD904E6242F440800B51121 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFD904EA242F507600B51121 /* ResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFD904E7242F441A00B51121 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA2438242F170E0095DEDB /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FFD904E8242F442F00B51121 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B41EF242F1E380010A52B /* APIRequest.swift */,
+				FF7B41F3242F25240010A52B /* AssetsRequest.swift */,
+				FFD904E2242F41C300B51121 /* BalanceRequest.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		FFD904E9242F445300B51121 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B41F1242F1ED20010A52B /* APIManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBA2439242F170E0095DEDB /* ViewController.swift in Sources */,
+				FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */,
+				FFD904EB242F507600B51121 /* ResultModel.swift in Sources */,
+				FFD904E3242F41C300B51121 /* BalanceRequest.swift in Sources */,
+				FFBA2439242F170E0095DEDB /* MainViewController.swift in Sources */,
+				FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */,
 				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
+				FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

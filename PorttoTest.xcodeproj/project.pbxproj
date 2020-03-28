@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2436242F170E0095DEDB /* AppDelegate.swift */; };
+		FFBA2439242F170E0095DEDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2438242F170E0095DEDB /* ViewController.swift */; };
+		FFBA243C242F170E0095DEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243A242F170E0095DEDB /* Main.storyboard */; };
+		FFBA243E242F170F0095DEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243D242F170F0095DEDB /* Assets.xcassets */; };
+		FFBA2441242F170F0095DEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */; };
+		FFBA244C242F17100095DEDB /* PorttoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA244B242F17100095DEDB /* PorttoTestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFBA2448242F17100095DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBA242B242F170E0095DEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFBA2432242F170E0095DEDB;
+			remoteInfo = PorttoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFBA2433242F170E0095DEDB /* PorttoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PorttoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBA2436242F170E0095DEDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFBA2438242F170E0095DEDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFBA243B242F170E0095DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFBA243D242F170F0095DEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFBA2440242F170F0095DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFBA2442242F170F0095DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBA2447242F17100095DEDB /* PorttoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PorttoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBA244B242F17100095DEDB /* PorttoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorttoTestTests.swift; sourceTree = "<group>"; };
+		FFBA244D242F17100095DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFBA2430242F170E0095DEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBA2444242F17100095DEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFBA242A242F170E0095DEDB = {
+			isa = PBXGroup;
+			children = (
+				FFBA2435242F170E0095DEDB /* PorttoTest */,
+				FFBA244A242F17100095DEDB /* PorttoTestTests */,
+				FFBA2434242F170E0095DEDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFBA2434242F170E0095DEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA2433242F170E0095DEDB /* PorttoTest.app */,
+				FFBA2447242F17100095DEDB /* PorttoTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA2436242F170E0095DEDB /* AppDelegate.swift */,
+				FFBA2438242F170E0095DEDB /* ViewController.swift */,
+				FFBA243A242F170E0095DEDB /* Main.storyboard */,
+				FFBA243D242F170F0095DEDB /* Assets.xcassets */,
+				FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */,
+				FFBA2442242F170F0095DEDB /* Info.plist */,
+			);
+			path = PorttoTest;
+			sourceTree = "<group>";
+		};
+		FFBA244A242F17100095DEDB /* PorttoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA244B242F17100095DEDB /* PorttoTestTests.swift */,
+				FFBA244D242F17100095DEDB /* Info.plist */,
+			);
+			path = PorttoTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFBA2432242F170E0095DEDB /* PorttoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBA2450242F17100095DEDB /* Build configuration list for PBXNativeTarget "PorttoTest" */;
+			buildPhases = (
+				FFBA242F242F170E0095DEDB /* Sources */,
+				FFBA2430242F170E0095DEDB /* Frameworks */,
+				FFBA2431242F170E0095DEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PorttoTest;
+			productName = PorttoTest;
+			productReference = FFBA2433242F170E0095DEDB /* PorttoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFBA2446242F17100095DEDB /* PorttoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBA2453242F17100095DEDB /* Build configuration list for PBXNativeTarget "PorttoTestTests" */;
+			buildPhases = (
+				FFBA2443242F17100095DEDB /* Sources */,
+				FFBA2444242F17100095DEDB /* Frameworks */,
+				FFBA2445242F17100095DEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFBA2449242F17100095DEDB /* PBXTargetDependency */,
+			);
+			name = PorttoTestTests;
+			productName = PorttoTestTests;
+			productReference = FFBA2447242F17100095DEDB /* PorttoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFBA242B242F170E0095DEDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = ColdZ;
+				TargetAttributes = {
+					FFBA2432242F170E0095DEDB = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					FFBA2446242F17100095DEDB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = FFBA2432242F170E0095DEDB;
+					};
+				};
+			};
+			buildConfigurationList = FFBA242E242F170E0095DEDB /* Build configuration list for PBXProject "PorttoTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFBA242A242F170E0095DEDB;
+			productRefGroup = FFBA2434242F170E0095DEDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFBA2432242F170E0095DEDB /* PorttoTest */,
+				FFBA2446242F17100095DEDB /* PorttoTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFBA2431242F170E0095DEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBA2441242F170F0095DEDB /* LaunchScreen.storyboard in Resources */,
+				FFBA243E242F170F0095DEDB /* Assets.xcassets in Resources */,
+				FFBA243C242F170E0095DEDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBA2445242F17100095DEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFBA242F242F170E0095DEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBA2439242F170E0095DEDB /* ViewController.swift in Sources */,
+				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBA2443242F17100095DEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBA244C242F17100095DEDB /* PorttoTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFBA2449242F17100095DEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFBA2432242F170E0095DEDB /* PorttoTest */;
+			targetProxy = FFBA2448242F17100095DEDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFBA243A242F170E0095DEDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBA243B242F170E0095DEDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBA2440242F170F0095DEDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFBA244E242F17100095DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFBA244F242F17100095DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFBA2451242F17100095DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 873C3LVKPJ;
+				INFOPLIST_FILE = PorttoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColdZ.PorttoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFBA2452242F17100095DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 873C3LVKPJ;
+				INFOPLIST_FILE = PorttoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColdZ.PorttoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFBA2454242F17100095DEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 873C3LVKPJ;
+				INFOPLIST_FILE = PorttoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColdZ.PorttoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PorttoTest.app/PorttoTest";
+			};
+			name = Debug;
+		};
+		FFBA2455242F17100095DEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 873C3LVKPJ;
+				INFOPLIST_FILE = PorttoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColdZ.PorttoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PorttoTest.app/PorttoTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFBA242E242F170E0095DEDB /* Build configuration list for PBXProject "PorttoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBA244E242F17100095DEDB /* Debug */,
+				FFBA244F242F17100095DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBA2450242F17100095DEDB /* Build configuration list for PBXNativeTarget "PorttoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBA2451242F17100095DEDB /* Debug */,
+				FFBA2452242F17100095DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBA2453242F17100095DEDB /* Build configuration list for PBXNativeTarget "PorttoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBA2454242F17100095DEDB /* Debug */,
+				FFBA2455242F17100095DEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFBA242B242F170E0095DEDB /* Project object */;
+}

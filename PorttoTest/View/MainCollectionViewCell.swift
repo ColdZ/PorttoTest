@@ -22,7 +22,7 @@ class MainCollectionViewCell: UICollectionViewCell {
                 if imageURL.lastPathComponent.contains("svg") {
                     imageView.isHidden = true
                     webView.isHidden = false
-                    load(url: imageURL)
+                    webView.loadSVG(url: imageURL)
                 } else {
                     webView.isHidden = true
                     imageView.isHidden = false
@@ -37,20 +37,6 @@ class MainCollectionViewCell: UICollectionViewCell {
         webView.navigationDelegate = self
         webView.scrollView.isScrollEnabled = false
         webView.contentMode = .scaleAspectFit
-    }
-    
-    public func load(url: URL) {
-        webView.stopLoading()
-        let request = URLRequest(url: url)
-        let task = URLSession.shared.dataTask(with: request) {[weak self] (data, response, error) in
-            guard let strongSelf = self else { return }
-            if let svgString = String(data: data ?? Data(), encoding: .utf8){
-                DispatchQueue.main.async {
-                    strongSelf.webView.loadHTMLString(svgString, baseURL: Bundle.main.bundleURL)
-                }
-            }
-        }
-        task.resume()
     }
     
     deinit {

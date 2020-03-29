@@ -18,13 +18,19 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    func initLayout() {
+        bind()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    func bind() {
+        let balanceRequest = BalanceRequest()
+        let balanceResult: Observable<BalanceModel> = self.apiManager.send(apiRequest: balanceRequest)
+        balanceResult.map{Optional($0.result.covertWeiToEther())}.bind(to: navigationItem.rx.title)
+        .disposed(by: disposeBag)
+        
         let request = AssetsRequest()
         let result: Observable<ResultModel> = self.apiManager.send(apiRequest: request)
         result.map{$0.assets}.bind(to: collectionView.rx.items) {[weak self] (collectionView, row, element) in
@@ -34,16 +40,18 @@ class MainViewController: UIViewController {
                                             for: indexPath) as! MainCollectionViewCell
             cell.model = element
             return cell
-        }
-        .disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
         
-        let balanceRequest = BalanceRequest()
-        let balanceResult: Observable<BalanceModel> = self.apiManager.send(apiRequest: balanceRequest)
-        balanceResult.map{Optional($0.result.covertWeiToEther())}.bind(to: navigationItem.rx.title)
-        .disposed(by: disposeBag)
-        
-        
-        initLayout()
+        collectionView.rx.itemSelected.subscribe(onNext: {[weak self] indexPath in
+            guard let strongSelf = self else { return }
+            let cell = strongSelf.collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
+            let model = cell.model
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if let assetViewController = mainStoryboard.instantiateViewController(withIdentifier: "AssetViewController") as? AssetViewController {
+                assetViewController.model = model
+                strongSelf.navigationController?.pushViewController(assetViewController, animated: true)
+            }
+        }).disposed(by: disposeBag)
     }
 }
 

@@ -31,7 +31,7 @@ extension UIColor {
     ///#303030
     static let gp_SecondaryGray = UIColor(hex: 0x303030)
     ///#ef7575
-    static let gp_Pink = UIColor(hex: 0xef7575)
+    static let buttonPink = UIColor(named: "buttonPink")!
     ///#c8c8c8
     static let gp_DisableGray = UIColor(hex: 0xc8c8c8)
     ///#edb45f

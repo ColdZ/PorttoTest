@@ -12,6 +12,8 @@
 		FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41EF242F1E380010A52B /* APIRequest.swift */; };
 		FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F1242F1ED20010A52B /* APIManager.swift */; };
 		FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F3242F25240010A52B /* AssetsRequest.swift */; };
+		FFAE420F2430A7130040A193 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE420E2430A7130040A193 /* AssetViewController.swift */; };
+		FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */; };
 		FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */; };
 		FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */; };
 		FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */; };
@@ -47,6 +49,8 @@
 		FF7B41EF242F1E380010A52B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FF7B41F1242F1ED20010A52B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		FF7B41F3242F25240010A52B /* AssetsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRequest.swift; sourceTree = "<group>"; };
+		FFAE420E2430A7130040A193 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColdZ.swift"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */,
 				FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */,
+				FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBA2438242F170E0095DEDB /* MainViewController.swift */,
+				FFAE420E2430A7130040A193 /* AssetViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */,
 				FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */,
 				FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */,
 				FFD904EB242F507600B51121 /* ResultModel.swift in Sources */,
@@ -412,6 +419,7 @@
 				FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */,
 				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
 				FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */,
+				FFAE420F2430A7130040A193 /* AssetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

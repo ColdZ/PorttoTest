@@ -4,11 +4,12 @@
 use_frameworks!
 
 target 'PorttoTest' do
-    pod 'RxSwift', '~> 5'
-    pod 'RxCocoa', '~> 5'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 end
 
 target 'PorttoTestTests' do
-    pod 'RxBlocking', '~> 5'
-    pod 'RxTest', '~> 5'
+  pod 'RxBlocking', '~> 5'
+  pod 'RxTest', '~> 5'
 end

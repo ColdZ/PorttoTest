@@ -123,6 +123,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FFAE5A3A24304FC900FC8EFD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FFAE5A2D243037B200FC8EFD /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		FFBA242A242F170E0095DEDB = {
 			isa = PBXGroup;
 			children = (
@@ -146,12 +154,12 @@
 		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
 			isa = PBXGroup;
 			children = (
+				FFAE5A3A24304FC900FC8EFD /* Util */,
 				FFD904E8242F442F00B51121 /* APIRequest */,
 				FFD904E9242F445300B51121 /* Manager */,
 				FFD904E7242F441A00B51121 /* ViewController */,
 				FFD904E6242F440800B51121 /* Model */,
 				FFAE5A3024303CE500FC8EFD /* View */,
-				FFAE5A2D243037B200FC8EFD /* Extension */,
 				FFBA2436242F170E0095DEDB /* AppDelegate.swift */,
 				FFBA243A242F170E0095DEDB /* Main.storyboard */,
 				FFBA243D242F170F0095DEDB /* Assets.xcassets */,

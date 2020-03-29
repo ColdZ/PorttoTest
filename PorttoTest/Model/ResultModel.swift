@@ -16,7 +16,8 @@ struct ResultModel: Codable {
 // MARK: - AssetElement
 struct AssetElement: Codable {
     let imageURL: String
-    let name, assetDescription: String
+    let name: String
+    let assetDescription: String
     let permalink: String
     let collection: Collection
 
@@ -24,7 +25,8 @@ struct AssetElement: Codable {
         case imageURL = "image_url"
         case name
         case assetDescription = "description"
-        case permalink, collection
+        case permalink
+        case collection
     }
 }
 

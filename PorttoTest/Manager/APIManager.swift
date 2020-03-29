@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 class APIManager: NSObject {
-    private let baseURL = URL(string: "https://api.opensea.io/api/v1/assets")!
+    private let baseURL = URL(string: "https:")!
 
     func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { observer in

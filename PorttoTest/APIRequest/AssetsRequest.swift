@@ -10,12 +10,12 @@ import UIKit
 
 class AssetsRequest: APIRequest {
     let method = RequestType.GET
-    let path = ""
+    let path = "/api.opensea.io/api/v1/assets"
     var parameters = [String: String]()
 
     init() {
         parameters["format"] = "json"
-        parameters["owner"] = "0x960DE9907A2e2f5363646d48D7FB675Cd2892e91"
+        parameters["owner"] = ownerAddress
         parameters["offset"] = "0"
         parameters["limit"] = "20"
     }

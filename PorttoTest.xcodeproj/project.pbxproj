@@ -12,6 +12,11 @@
 		FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41EF242F1E380010A52B /* APIRequest.swift */; };
 		FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F1242F1ED20010A52B /* APIManager.swift */; };
 		FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F3242F25240010A52B /* AssetsRequest.swift */; };
+		FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */; };
+		FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */; };
+		FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */; };
+		FFB3A1F8242F73DC0044B41A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A1F7242F73DC0044B41A /* Constant.swift */; };
+		FFB3A1FA242F7DBC0044B41A /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A1F9242F7DBC0044B41A /* BalanceModel.swift */; };
 		FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2436242F170E0095DEDB /* AppDelegate.swift */; };
 		FFBA2439242F170E0095DEDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2438242F170E0095DEDB /* MainViewController.swift */; };
 		FFBA243C242F170E0095DEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA243A242F170E0095DEDB /* Main.storyboard */; };
@@ -42,6 +47,11 @@
 		FF7B41EF242F1E380010A52B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FF7B41F1242F1ED20010A52B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		FF7B41F3242F25240010A52B /* AssetsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRequest.swift; sourceTree = "<group>"; };
+		FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ColdZ.swift"; sourceTree = "<group>"; };
+		FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColdZ.swift"; sourceTree = "<group>"; };
+		FFB3A1F7242F73DC0044B41A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FFB3A1F9242F7DBC0044B41A /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		FFBA2433242F170E0095DEDB /* PorttoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PorttoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBA2436242F170E0095DEDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBA2438242F170E0095DEDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +106,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FFAE5A2D243037B200FC8EFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */,
+				FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFAE5A3024303CE500FC8EFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FFBA242A242F170E0095DEDB = {
 			isa = PBXGroup;
 			children = (
@@ -119,15 +146,18 @@
 		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
 			isa = PBXGroup;
 			children = (
-				FFD904E9242F445300B51121 /* Manager */,
 				FFD904E8242F442F00B51121 /* APIRequest */,
+				FFD904E9242F445300B51121 /* Manager */,
 				FFD904E7242F441A00B51121 /* ViewController */,
 				FFD904E6242F440800B51121 /* Model */,
+				FFAE5A3024303CE500FC8EFD /* View */,
+				FFAE5A2D243037B200FC8EFD /* Extension */,
 				FFBA2436242F170E0095DEDB /* AppDelegate.swift */,
 				FFBA243A242F170E0095DEDB /* Main.storyboard */,
 				FFBA243D242F170F0095DEDB /* Assets.xcassets */,
 				FFBA243F242F170F0095DEDB /* LaunchScreen.storyboard */,
 				FFBA2442242F170F0095DEDB /* Info.plist */,
+				FFB3A1F7242F73DC0044B41A /* Constant.swift */,
 			);
 			path = PorttoTest;
 			sourceTree = "<group>";
@@ -145,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				FFD904EA242F507600B51121 /* ResultModel.swift */,
+				FFB3A1F9242F7DBC0044B41A /* BalanceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,9 +393,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */,
+				FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */,
 				FFD904EB242F507600B51121 /* ResultModel.swift in Sources */,
 				FFD904E3242F41C300B51121 /* BalanceRequest.swift in Sources */,
+				FFB3A1F8242F73DC0044B41A /* Constant.swift in Sources */,
+				FFB3A1FA242F7DBC0044B41A /* BalanceModel.swift in Sources */,
+				FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */,
 				FFBA2439242F170E0095DEDB /* MainViewController.swift in Sources */,
+				FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */,
 				FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */,
 				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
 				FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */,

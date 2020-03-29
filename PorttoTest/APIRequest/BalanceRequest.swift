@@ -10,13 +10,13 @@ import UIKit
 
 class BalanceRequest: APIRequest {
     var method = RequestType.GET
-    var path = "api.opensea.io/api/v1/assets"
+    var path = "/api.etherscan.io/api"
     var parameters = [String: String]()
 
     init() {
-        parameters["format"] = "json"
-        parameters["owner"] = "0x960DE9907A2e2f5363646d48D7FB675Cd2892e91"
-        parameters["offset"] = "0"
-        parameters["limit"] = "20"
+        parameters["module"] = "account"
+        parameters["action"] = "balance"
+        parameters["address"] = ownerAddress
+        parameters["tag"] = "latest"
     }
 }

@@ -18,7 +18,19 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initLayout()
         bind()
+    }
+    
+    func initLayout() {
+        if let collectionLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let itemWidth = (screenWidth - itemMargin * (mainCollectionViewHorizontalCount + 1)) / mainCollectionViewHorizontalCount
+            let itemHeight = (screenHeight - navigationBarHeight - itemMargin * mainCollectionViewVerticalCount) / (mainCollectionViewVerticalCount + 0.7)
+            collectionLayout.itemSize = CGSize(width: itemWidth, height: itemHeight)
+            collectionLayout.sectionInset = UIEdgeInsets(top: itemMargin, left: itemMargin, bottom: itemMargin, right: itemMargin)
+            collectionLayout.minimumLineSpacing = itemMargin
+            collectionLayout.minimumInteritemSpacing = itemMargin
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -46,7 +46,16 @@ class MainCollectionViewCell: UICollectionViewCell {
 
 extension MainCollectionViewCell: WKNavigationDelegate {
     func webView(_ webView: WKWebView,
-      didFinish navigation: WKNavigation!) {
-        
+                 didFinish navigation: WKNavigation!) {
+        self.webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
+            if complete != nil {
+                self.webView.evaluateJavaScript("document.documentElement.scrollWidth", completionHandler: { (width, error) in
+                    self.webView.evaluateJavaScript("document.documentElement.scrollHeight", completionHandler: { (height, error) in
+                        print("height:\(width),\(height)")
+                    })
+                })
+            }
+            
+        })
     }
 }

@@ -58,7 +58,6 @@ class AssetViewController: UIViewController {
     }
     
     func refreshLayout() {
-        let screenWidth = UIScreen.main.bounds.width
         let contentWidth = screenWidth - margin * 2
         
         nameLabelWidthConstraint.constant = contentWidth

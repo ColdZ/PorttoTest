@@ -49,13 +49,13 @@ extension MainCollectionViewCell: WKNavigationDelegate {
                  didFinish navigation: WKNavigation!) {
         self.webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
             if complete != nil {
-                self.webView.evaluateJavaScript("document.documentElement.scrollWidth", completionHandler: { (width, error) in
-                    self.webView.evaluateJavaScript("document.documentElement.scrollHeight", completionHandler: { (height, error) in
-                        print("height:\(width),\(height)")
-                    })
-                })
+                if let view = self.webView.subviews.first?.subviews.first {
+                    let contentViewScale = view.transform.a
+                    let webViewWidth = self.webView.bounds.width
+                    let webViewScale = 520 * contentViewScale / webViewWidth
+                    self.webView.scrollView.transform = CGAffineTransform(scaleX: 1 / webViewScale, y: 1 / webViewScale)
+                }
             }
-            
         })
     }
 }

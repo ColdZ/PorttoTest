@@ -22,7 +22,9 @@ class AssetViewController: UIViewController {
     @IBOutlet weak var nameLabelWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var descriptionLabelWidthConstraint: NSLayoutConstraint!
     
-    let margin: CGFloat = 12
+    var contentWidth: CGFloat {
+        return screenWidth - itemMargin * 2
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +38,7 @@ class AssetViewController: UIViewController {
     
     func initLayout() {
         navigationItem.title = model?.collection.name
-        
+        webView.navigationDelegate = self
         webView.scrollView.isScrollEnabled = false
         webView.contentMode = .scaleAspectFit
         if let imageURLString = model?.imageURL,
@@ -58,7 +60,6 @@ class AssetViewController: UIViewController {
     }
     
     func refreshLayout() {
-        let contentWidth = screenWidth - margin * 2
         
         nameLabelWidthConstraint.constant = contentWidth
         descriptionLabelWidthConstraint.constant = contentWidth
@@ -78,5 +79,22 @@ class AssetViewController: UIViewController {
             let safariViewController = SFSafariViewController(url: permalinkURL)
             present(safariViewController, animated: true)
         }
+    }
+}
+
+extension AssetViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView,
+                 didFinish navigation: WKNavigation!) {
+        self.webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
+            if complete != nil {
+                if let view = self.webView.subviews.first?.subviews.first {
+                    let contentViewScale = view.transform.a
+                    let webViewWidth = self.webView.bounds.width
+                    let webViewScale = 520 * contentViewScale / webViewWidth
+                    self.webView.scrollView.transform = CGAffineTransform(scaleX: 1 / webViewScale, y: 1 / webViewScale)
+                    self.webViewHeightConstraint.constant = self.contentWidth
+                }
+            }
+        })
     }
 }

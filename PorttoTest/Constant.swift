@@ -15,6 +15,8 @@ let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 let navigationBarHeight: CGFloat = 44
 
+let assetsServiceLimit: Int = 20
+
 let itemMargin: CGFloat = 12
 let mainCollectionViewHorizontalCount: CGFloat = 2
 let mainCollectionViewVerticalCount: CGFloat = 3

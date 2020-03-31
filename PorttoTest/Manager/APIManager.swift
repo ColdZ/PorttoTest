@@ -11,7 +11,15 @@ import RxSwift
 
 class APIManager: NSObject {
     private let baseURL = URL(string: "https:")!
-
+    
+    func send(apiRequest: APIRequest, completion: @escaping ((Data) -> ())) {
+        let request = apiRequest.request(with: self.baseURL)
+        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+            completion(data ?? Data())
+        }
+        task.resume()
+    }
+    
     func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { observer in
             let request = apiRequest.request(with: self.baseURL)
@@ -25,7 +33,7 @@ class APIManager: NSObject {
                 observer.onCompleted()
             }
             task.resume()
-
+            
             return Disposables.create {
                 task.cancel()
             }

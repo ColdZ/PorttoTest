@@ -12,11 +12,16 @@
 		FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41EF242F1E380010A52B /* APIRequest.swift */; };
 		FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F1242F1ED20010A52B /* APIManager.swift */; };
 		FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F3242F25240010A52B /* AssetsRequest.swift */; };
+		FFA5483A2433999500DA2C41 /* LoadingIndicatorAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA548392433999500DA2C41 /* LoadingIndicatorAbility.swift */; };
+		FFA5483E243399BB00DA2C41 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5483C243399BB00DA2C41 /* LoadingIndicatorView.swift */; };
+		FFA5483F243399BB00DA2C41 /* LoadingIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA5483D243399BB00DA2C41 /* LoadingIndicatorView.xib */; };
+		FFA5484124339A1800DA2C41 /* UIView+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */; };
 		FFAE420F2430A7130040A193 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE420E2430A7130040A193 /* AssetViewController.swift */; };
 		FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */; };
 		FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */; };
 		FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */; };
 		FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */; };
+		FFB3829A2432F47500DB4594 /* AssetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB382992432F47500DB4594 /* AssetsService.swift */; };
 		FFB3A1F8242F73DC0044B41A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A1F7242F73DC0044B41A /* Constant.swift */; };
 		FFB3A1FA242F7DBC0044B41A /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A1F9242F7DBC0044B41A /* BalanceModel.swift */; };
 		FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA2436242F170E0095DEDB /* AppDelegate.swift */; };
@@ -49,11 +54,16 @@
 		FF7B41EF242F1E380010A52B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FF7B41F1242F1ED20010A52B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		FF7B41F3242F25240010A52B /* AssetsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRequest.swift; sourceTree = "<group>"; };
+		FFA548392433999500DA2C41 /* LoadingIndicatorAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorAbility.swift; sourceTree = "<group>"; };
+		FFA5483C243399BB00DA2C41 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		FFA5483D243399BB00DA2C41 /* LoadingIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingIndicatorView.xib; sourceTree = "<group>"; };
+		FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE420E2430A7130040A193 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColdZ.swift"; sourceTree = "<group>"; };
+		FFB382992432F47500DB4594 /* AssetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsService.swift; sourceTree = "<group>"; };
 		FFB3A1F7242F73DC0044B41A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FFB3A1F9242F7DBC0044B41A /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		FFBA2433242F170E0095DEDB /* PorttoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PorttoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,12 +120,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FFA548382433994E00DA2C41 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FFA548392433999500DA2C41 /* LoadingIndicatorAbility.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FFA5483B243399BB00DA2C41 /* LoadingIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				FFA5483C243399BB00DA2C41 /* LoadingIndicatorView.swift */,
+				FFA5483D243399BB00DA2C41 /* LoadingIndicatorView.xib */,
+			);
+			path = LoadingIndicatorView;
+			sourceTree = "<group>";
+		};
 		FFAE5A2D243037B200FC8EFD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */,
 				FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */,
 				FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */,
+				FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -123,6 +151,7 @@
 		FFAE5A3024303CE500FC8EFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFA5483B243399BB00DA2C41 /* LoadingIndicatorView */,
 				FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */,
 			);
 			path = View;
@@ -131,9 +160,18 @@
 		FFAE5A3A24304FC900FC8EFD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				FFA548382433994E00DA2C41 /* Protocol */,
 				FFAE5A2D243037B200FC8EFD /* Extension */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		FFB382962432F44100DB4594 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FFB382992432F47500DB4594 /* AssetsService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		FFBA242A242F170E0095DEDB = {
@@ -159,6 +197,7 @@
 		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
 			isa = PBXGroup;
 			children = (
+				FFB382962432F44100DB4594 /* Service */,
 				FFAE5A3A24304FC900FC8EFD /* Util */,
 				FFD904E8242F442F00B51121 /* APIRequest */,
 				FFD904E9242F445300B51121 /* Manager */,
@@ -308,6 +347,7 @@
 				FFBA2441242F170F0095DEDB /* LaunchScreen.storyboard in Resources */,
 				FFBA243E242F170F0095DEDB /* Assets.xcassets in Resources */,
 				FFBA243C242F170E0095DEDB /* Main.storyboard in Resources */,
+				FFA5483F243399BB00DA2C41 /* LoadingIndicatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +447,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */,
+				FFA5483A2433999500DA2C41 /* LoadingIndicatorAbility.swift in Sources */,
 				FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */,
 				FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */,
 				FFD904EB242F507600B51121 /* ResultModel.swift in Sources */,
+				FFA5483E243399BB00DA2C41 /* LoadingIndicatorView.swift in Sources */,
 				FFD904E3242F41C300B51121 /* BalanceRequest.swift in Sources */,
+				FFA5484124339A1800DA2C41 /* UIView+ColdZ.swift in Sources */,
 				FFB3A1F8242F73DC0044B41A /* Constant.swift in Sources */,
 				FFB3A1FA242F7DBC0044B41A /* BalanceModel.swift in Sources */,
 				FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */,
@@ -418,6 +461,7 @@
 				FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */,
 				FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */,
 				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
+				FFB3829A2432F47500DB4594 /* AssetsService.swift in Sources */,
 				FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */,
 				FFAE420F2430A7130040A193 /* AssetViewController.swift in Sources */,
 			);

@@ -96,6 +96,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="UfF-vd-TaJ" id="ZrK-f9-kXN"/>
+                                    <outlet property="delegate" destination="UfF-vd-TaJ" id="P7C-X9-fsT"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

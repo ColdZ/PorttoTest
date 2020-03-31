@@ -13,10 +13,10 @@ class AssetsRequest: APIRequest {
     let path = "/api.opensea.io/api/v1/assets"
     var parameters = [String: String]()
 
-    init() {
+    init(offset: Int) {
         parameters["format"] = "json"
         parameters["owner"] = ownerAddress
-        parameters["offset"] = "0"
-        parameters["limit"] = "20"
+        parameters["offset"] = String(offset)
+        parameters["limit"] = String(assetsServiceLimit)
     }
 }

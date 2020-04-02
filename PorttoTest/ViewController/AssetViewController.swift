@@ -13,11 +13,9 @@ import WebKit
 class AssetViewController: UIViewController {
     var model: AssetElement?
     
-    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var webViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var nameLabelWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var descriptionLabelWidthConstraint: NSLayoutConstraint!
@@ -38,18 +36,11 @@ class AssetViewController: UIViewController {
     
     func initLayout() {
         navigationItem.title = model?.collection.name
-        webView.navigationDelegate = self
-        webView.scrollView.isScrollEnabled = false
-        webView.contentMode = .scaleAspectFit
         if let imageURLString = model?.imageURL,
             let imageURL = URL(string: imageURLString) {
             if imageURL.lastPathComponent.contains("svg") {
-                imageView.isHidden = true
-                webView.isHidden = false
-                webView.loadSVG(url: imageURL)
+                imageView.kf.setImage(with: imageURL, options: [.processor(SVGProcessor())])
             } else {
-                webView.isHidden = true
-                imageView.isHidden = false
                 imageView.kf.setImage(with: imageURL, options: nil)
             }
         }
@@ -79,22 +70,5 @@ class AssetViewController: UIViewController {
             let safariViewController = SFSafariViewController(url: permalinkURL)
             present(safariViewController, animated: true)
         }
-    }
-}
-
-extension AssetViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView,
-                 didFinish navigation: WKNavigation!) {
-        self.webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
-            if complete != nil {
-                if let view = self.webView.subviews.first?.subviews.first {
-                    let contentViewScale = view.transform.a
-                    let webViewWidth = self.webView.bounds.width
-                    let webViewScale = 520 * contentViewScale / webViewWidth
-                    self.webView.scrollView.transform = CGAffineTransform(scaleX: 1 / webViewScale, y: 1 / webViewScale)
-                    self.webViewHeightConstraint.constant = self.contentWidth
-                }
-            }
-        })
     }
 }

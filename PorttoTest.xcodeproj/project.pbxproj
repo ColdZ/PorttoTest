@@ -12,12 +12,12 @@
 		FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41EF242F1E380010A52B /* APIRequest.swift */; };
 		FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F1242F1ED20010A52B /* APIManager.swift */; };
 		FF7B41F4242F25240010A52B /* AssetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B41F3242F25240010A52B /* AssetsRequest.swift */; };
+		FF7D9FAE2435BB1E004EB968 /* SVGProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D9FAD2435BB1E004EB968 /* SVGProcessor.swift */; };
 		FFA5483A2433999500DA2C41 /* LoadingIndicatorAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA548392433999500DA2C41 /* LoadingIndicatorAbility.swift */; };
 		FFA5483E243399BB00DA2C41 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5483C243399BB00DA2C41 /* LoadingIndicatorView.swift */; };
 		FFA5483F243399BB00DA2C41 /* LoadingIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA5483D243399BB00DA2C41 /* LoadingIndicatorView.xib */; };
 		FFA5484124339A1800DA2C41 /* UIView+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */; };
 		FFAE420F2430A7130040A193 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE420E2430A7130040A193 /* AssetViewController.swift */; };
-		FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */; };
 		FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */; };
 		FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */; };
 		FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */; };
@@ -54,12 +54,12 @@
 		FF7B41EF242F1E380010A52B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FF7B41F1242F1ED20010A52B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		FF7B41F3242F25240010A52B /* AssetsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsRequest.swift; sourceTree = "<group>"; };
+		FF7D9FAD2435BB1E004EB968 /* SVGProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGProcessor.swift; sourceTree = "<group>"; };
 		FFA548392433999500DA2C41 /* LoadingIndicatorAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorAbility.swift; sourceTree = "<group>"; };
 		FFA5483C243399BB00DA2C41 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		FFA5483D243399BB00DA2C41 /* LoadingIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingIndicatorView.xib; sourceTree = "<group>"; };
 		FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE420E2430A7130040A193 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
-		FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ColdZ.swift"; sourceTree = "<group>"; };
 		FFAE5A3124303D0B00FC8EFD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColdZ.swift"; sourceTree = "<group>"; };
@@ -142,7 +142,6 @@
 			children = (
 				FFAE5A2E2430387500FC8EFD /* String+ColdZ.swift */,
 				FFAE5A38243042BA00FC8EFD /* UIColor+ColdZ.swift */,
-				FFAE42122430A8320040A193 /* WKWebView+ColdZ.swift */,
 				FFA5484024339A1800DA2C41 /* UIView+ColdZ.swift */,
 			);
 			path = Extension;
@@ -162,6 +161,7 @@
 			children = (
 				FFA548382433994E00DA2C41 /* Protocol */,
 				FFAE5A2D243037B200FC8EFD /* Extension */,
+				FF7D9FAD2435BB1E004EB968 /* SVGProcessor.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -197,13 +197,13 @@
 		FFBA2435242F170E0095DEDB /* PorttoTest */ = {
 			isa = PBXGroup;
 			children = (
-				FFB382962432F44100DB4594 /* Service */,
-				FFAE5A3A24304FC900FC8EFD /* Util */,
 				FFD904E8242F442F00B51121 /* APIRequest */,
 				FFD904E9242F445300B51121 /* Manager */,
-				FFD904E7242F441A00B51121 /* ViewController */,
 				FFD904E6242F440800B51121 /* Model */,
 				FFAE5A3024303CE500FC8EFD /* View */,
+				FFD904E7242F441A00B51121 /* ViewController */,
+				FFB382962432F44100DB4594 /* Service */,
+				FFAE5A3A24304FC900FC8EFD /* Util */,
 				FFBA2436242F170E0095DEDB /* AppDelegate.swift */,
 				FFBA243A242F170E0095DEDB /* Main.storyboard */,
 				FFBA243D242F170F0095DEDB /* Assets.xcassets */,
@@ -446,7 +446,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFAE42132430A8320040A193 /* WKWebView+ColdZ.swift in Sources */,
 				FFA5483A2433999500DA2C41 /* LoadingIndicatorAbility.swift in Sources */,
 				FF7B41F2242F1ED20010A52B /* APIManager.swift in Sources */,
 				FFAE5A2F2430387500FC8EFD /* String+ColdZ.swift in Sources */,
@@ -459,6 +458,7 @@
 				FFAE5A39243042BB00FC8EFD /* UIColor+ColdZ.swift in Sources */,
 				FFBA2439242F170E0095DEDB /* MainViewController.swift in Sources */,
 				FFAE5A3224303D0B00FC8EFD /* MainCollectionViewCell.swift in Sources */,
+				FF7D9FAE2435BB1E004EB968 /* SVGProcessor.swift in Sources */,
 				FF7B41F0242F1E380010A52B /* APIRequest.swift in Sources */,
 				FFBA2437242F170E0095DEDB /* AppDelegate.swift in Sources */,
 				FFB3829A2432F47500DB4594 /* AssetsService.swift in Sources */,

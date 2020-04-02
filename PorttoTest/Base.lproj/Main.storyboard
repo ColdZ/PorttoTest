@@ -50,17 +50,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <wkWebView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vj7-b7-EoK">
-                                                    <rect key="frame" x="30" y="4" width="135" height="135"/>
-                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Vj7-b7-EoK" secondAttribute="height" multiplier="1:1" id="V0F-vb-ZJ4"/>
-                                                    </constraints>
-                                                    <wkWebViewConfiguration key="configuration">
-                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                                        <wkPreferences key="preferences"/>
-                                                    </wkWebViewConfiguration>
-                                                </wkWebView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="14i-JZ-3HW">
                                                     <rect key="frame" x="8" y="8" width="179" height="127"/>
                                                 </imageView>
@@ -77,14 +66,11 @@
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="C61-Do-GpN" firstAttribute="top" secondItem="Vj7-b7-EoK" secondAttribute="bottom" constant="4" id="1sj-0y-GIB"/>
                                             <constraint firstItem="14i-JZ-3HW" firstAttribute="top" secondItem="OzN-79-Hwq" secondAttribute="top" constant="8" id="5OC-Qh-A9P"/>
                                             <constraint firstAttribute="trailing" secondItem="C61-Do-GpN" secondAttribute="trailing" constant="8" id="5hN-VH-AmM"/>
                                             <constraint firstAttribute="bottom" secondItem="C61-Do-GpN" secondAttribute="bottom" constant="8" id="BzO-TP-fNV"/>
-                                            <constraint firstItem="Vj7-b7-EoK" firstAttribute="top" secondItem="OzN-79-Hwq" secondAttribute="top" constant="4" id="GHi-8z-WNY"/>
                                             <constraint firstAttribute="trailing" secondItem="14i-JZ-3HW" secondAttribute="trailing" constant="8" id="GRV-yT-3zw"/>
                                             <constraint firstItem="C61-Do-GpN" firstAttribute="top" secondItem="14i-JZ-3HW" secondAttribute="bottom" constant="8" id="R6a-ei-vtV"/>
-                                            <constraint firstItem="Vj7-b7-EoK" firstAttribute="centerX" secondItem="OzN-79-Hwq" secondAttribute="centerX" id="k1g-Ld-aTS"/>
                                             <constraint firstItem="14i-JZ-3HW" firstAttribute="leading" secondItem="OzN-79-Hwq" secondAttribute="leading" constant="8" id="y2u-qS-6Lg"/>
                                             <constraint firstItem="C61-Do-GpN" firstAttribute="leading" secondItem="OzN-79-Hwq" secondAttribute="leading" constant="8" id="zxB-T7-gqt"/>
                                         </constraints>
@@ -92,7 +78,6 @@
                                         <connections>
                                             <outlet property="imageView" destination="14i-JZ-3HW" id="4XQ-fX-kbY"/>
                                             <outlet property="nameLabel" destination="C61-Do-GpN" id="qe6-kd-l5V"/>
-                                            <outlet property="webView" destination="Vj7-b7-EoK" id="4zc-HV-v27"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -131,17 +116,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bL-fo-Hph">
                                 <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <subviews>
-                                    <wkWebView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuC-co-GLs">
-                                        <rect key="frame" x="12" y="12" width="390" height="390"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="390" id="nIi-Sj-5BQ"/>
-                                        </constraints>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-CF-ynL">
                                         <rect key="frame" x="12" y="12" width="390" height="390"/>
                                         <constraints>
@@ -169,18 +143,15 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="tuC-co-GLs" firstAttribute="leading" secondItem="zZ2-Cn-s0r" secondAttribute="leading" constant="12" id="0pb-ze-LKt"/>
                                     <constraint firstItem="sMa-PA-BSH" firstAttribute="leading" secondItem="zZ2-Cn-s0r" secondAttribute="leading" constant="12" id="Dp4-lj-ieS"/>
                                     <constraint firstItem="q07-mD-5r2" firstAttribute="top" secondItem="uyq-CF-ynL" secondAttribute="bottom" constant="12" id="KJb-hr-b09"/>
                                     <constraint firstItem="uyq-CF-ynL" firstAttribute="leading" secondItem="zZ2-Cn-s0r" secondAttribute="leading" constant="12" id="O6w-BS-vrt"/>
-                                    <constraint firstItem="tuC-co-GLs" firstAttribute="trailing" secondItem="zZ2-Cn-s0r" secondAttribute="trailing" constant="12" id="VbC-NV-Btx"/>
                                     <constraint firstItem="sMa-PA-BSH" firstAttribute="top" secondItem="q07-mD-5r2" secondAttribute="bottom" constant="12" id="bOE-aR-fRO"/>
                                     <constraint firstItem="zZ2-Cn-s0r" firstAttribute="bottom" secondItem="sMa-PA-BSH" secondAttribute="bottom" constant="12" id="cVi-DI-czS"/>
                                     <constraint firstItem="q07-mD-5r2" firstAttribute="trailing" secondItem="zZ2-Cn-s0r" secondAttribute="trailing" constant="12" id="hBm-BB-At9"/>
                                     <constraint firstItem="q07-mD-5r2" firstAttribute="leading" secondItem="zZ2-Cn-s0r" secondAttribute="leading" constant="12" id="hCk-kV-rOl"/>
                                     <constraint firstItem="uyq-CF-ynL" firstAttribute="top" secondItem="zZ2-Cn-s0r" secondAttribute="top" constant="12" id="jOw-Z2-jN5"/>
                                     <constraint firstItem="sMa-PA-BSH" firstAttribute="trailing" secondItem="zZ2-Cn-s0r" secondAttribute="trailing" constant="12" id="m3z-jd-8IA"/>
-                                    <constraint firstItem="tuC-co-GLs" firstAttribute="top" secondItem="zZ2-Cn-s0r" secondAttribute="top" constant="12" id="pOC-Bg-1FD"/>
                                     <constraint firstItem="uyq-CF-ynL" firstAttribute="trailing" secondItem="zZ2-Cn-s0r" secondAttribute="trailing" constant="12" id="tNT-jy-NqT"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="zZ2-Cn-s0r"/>
@@ -224,8 +195,6 @@
                         <outlet property="imageViewHeightConstraint" destination="GTx-N6-iFi" id="Urd-1D-BRd"/>
                         <outlet property="nameLabel" destination="q07-mD-5r2" id="WjL-Iz-pWw"/>
                         <outlet property="nameLabelWidthConstraint" destination="UTD-mY-LTu" id="XkV-6h-vcx"/>
-                        <outlet property="webView" destination="tuC-co-GLs" id="Uo6-L9-X2c"/>
-                        <outlet property="webViewHeightConstraint" destination="nIi-Sj-5BQ" id="rY6-1w-OkB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEk-oU-yKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

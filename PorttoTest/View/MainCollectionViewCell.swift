@@ -11,7 +11,6 @@ import UIKit
 import WebKit
 
 class MainCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     var model: AssetElement? {
@@ -20,42 +19,11 @@ class MainCollectionViewCell: UICollectionViewCell {
             if let imageURLString = model?.imageURL,
                 let imageURL = URL(string: imageURLString) {
                 if imageURL.lastPathComponent.contains("svg") {
-                    imageView.isHidden = true
-                    webView.isHidden = false
-                    webView.loadSVG(url: imageURL)
+                    imageView.kf.setImage(with: imageURL, options: [.processor(SVGProcessor())])
                 } else {
-                    webView.isHidden = true
-                    imageView.isHidden = false
                     imageView.kf.setImage(with: imageURL, options: nil)
                 }
             }
         }
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        webView.navigationDelegate = self
-        webView.scrollView.isScrollEnabled = false
-        webView.contentMode = .scaleAspectFit
-    }
-    
-    deinit {
-        webView.stopLoading()
-    }
-}
-
-extension MainCollectionViewCell: WKNavigationDelegate {
-    func webView(_ webView: WKWebView,
-                 didFinish navigation: WKNavigation!) {
-        self.webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
-            if complete != nil {
-                if let view = self.webView.subviews.first?.subviews.first {
-                    let contentViewScale = view.transform.a
-                    let webViewWidth = self.webView.bounds.width
-                    let webViewScale = 520 * contentViewScale / webViewWidth
-                    self.webView.scrollView.transform = CGAffineTransform(scaleX: 1 / webViewScale, y: 1 / webViewScale)
-                }
-            }
-        })
     }
 }

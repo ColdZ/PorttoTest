@@ -1,4 +1,7 @@
 PODS:
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
@@ -12,6 +15,8 @@ PODS:
   - RxSwift (5.1.1)
   - RxTest (5.1.1):
     - RxSwift (~> 5)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
   - Kingfisher (~> 5.0)
@@ -19,24 +24,29 @@ DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - RxTest (~> 5)
+  - SVGKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
     - Kingfisher
     - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
     - RxTest
+    - SVGKit
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
 
-PODFILE CHECKSUM: ac57ffb9637ec91c68bb3a72bca62c93f9113c3a
+PODFILE CHECKSUM: bb6ad5b8651ca96b9f33a6bc87f71feac14f1609
 
 COCOAPODS: 1.7.5
